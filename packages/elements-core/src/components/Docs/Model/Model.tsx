@@ -71,12 +71,13 @@ const ModelComponent: React.FC<ModelProps> = ({
   const descriptionChanged = nodeHasChanged?.({ nodeId, attr: 'description' });
   const description = (
     <VStack spacing={10}>
-      {data.description && data.type === 'object' && (
-        <Box pos="relative">
-          <MarkdownViewer role="textbox" markdown={data.description} />
-          <NodeAnnotation change={descriptionChanged} />
-        </Box>
-      )}
+      {data.description &&
+        (data.type === 'object' || (data.allOf || []).some(s => (s as JSONSchema7).type === 'object')) && (
+          <Box pos="relative">
+            <MarkdownViewer role="textbox" markdown={data.description} />
+            <NodeAnnotation change={descriptionChanged} />
+          </Box>
+        )}
 
       <NodeVendorExtensions data={data} />
 
