@@ -281,6 +281,13 @@ components:
         - completed_at
         - created_at
         - updated_at
+    CustomTodos:
+      description: |
+        I'm a custom child model's description.
+        I should be displayed instead of my parent's description as I am grown up and have my own.
+        Yay, independence!
+      allOf:
+        - $ref: '#/components/schemas/Todos'
     User:
       description: ''
       type: object
