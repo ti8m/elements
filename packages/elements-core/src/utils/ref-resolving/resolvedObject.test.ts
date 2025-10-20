@@ -32,6 +32,7 @@ describe('createResolvedObject', () => {
 
     expect((resolvedObject as any).paramaterA.parameterB).toEqual({
       something: 'something else',
+      objectRefType: 'parameterB',
     });
   });
 
