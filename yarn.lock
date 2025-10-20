@@ -5953,10 +5953,10 @@
     "@types/json-schema" "^7.0.7"
     magic-error "0.0.1"
 
-"@stoplight/json-schema-viewer@4.16.3":
-  version "4.16.3"
-  resolved "https://registry.npmjs.org/@stoplight/json-schema-viewer/-/json-schema-viewer-4.16.3.tgz"
-  integrity sha512-cQDxmyAkR3l8Pem1EuGMR+JKM8ePTSr/aqzJscp+hJ4R2geUNbdEleBHnJkZLLLfNr+PMlP+WiFO6GajCSxzUA==
+"@stoplight/json-schema-viewer@4.16.401":
+  version "4.16.401"
+  resolved "https://bin.ti8m.ch:443/artifactory/api/npm/channelsuite-npm/@stoplight/json-schema-viewer/-/@stoplight/json-schema-viewer-4.16.401.tgz#c1b16b93447907632b7502aa18444830b600250c"
+  integrity sha512-oXPwMf86SeIo7VRBeaPqW6KULr77q8FaymFu0035NAosk6nW8UXgySYk+EhEIukvbFGQwDHyajVECTnrOo8yTQ==
   dependencies:
     "@stoplight/json" "^3.20.1"
     "@stoplight/json-schema-tree" "^4.0.0"

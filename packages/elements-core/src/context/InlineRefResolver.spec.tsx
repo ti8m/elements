@@ -135,6 +135,7 @@ describe('InlineRefResolver', () => {
 
       expect(resolved).toEqual({
         type: ['object', 'null'],
+        objectRefType: 'User',
         properties: {
           id: {
             type: ['integer', 'null'],
