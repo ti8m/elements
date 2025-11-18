@@ -141,7 +141,9 @@ export const Sidebar: React.FC<SidebarProps> = ({ serviceNode, logo, container, 
         ) : (
           serviceNode.data.logo && <Logo logo={serviceNode.data.logo} />
         )}
-        <Heading size={4}>{serviceNode.name}</Heading>
+        <Heading size={4} title={serviceNode.name}>
+          {serviceNode.name}
+        </Heading>
       </Flex>
       <Flex flexGrow flexShrink overflowY="auto" direction="col">
         <TableOfContents
