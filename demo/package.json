@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@stoplight/mosaic": "^1.53.5",
-    "@stoplight/elements": "^9.0.2102",
+    "@stoplight/elements": "^9.0.2103",
     "@stoplight/elements-dev-portal": "^3.0.0",
     "history": "^5.0.0",
     "react": "16.14.0",
