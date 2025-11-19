@@ -123,7 +123,9 @@ export const Sidebar = ({
         ) : (
           typeof logo === 'object' && <Logo logo={logo} />
         )}
-        <Heading size={4}>{name}</Heading>
+        <Heading size={4} title={name}>
+          {name}
+        </Heading>
       </Flex>
       <Flex flexGrow flexShrink overflowY="auto" direction="col">
         <TableOfContents
